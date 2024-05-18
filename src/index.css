@@ -3,20 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .App {
-  background: rgb(54, 48, 48);
-  background: linear-gradient(
-    90deg,
-    rgba(54, 48, 48, 1) 0%,
-    rgba(0, 0, 0, 1) 77%
-  );
+body {
+  background: rgb(14, 15, 26);
+  overflow-x: hidden;
+}
+/* .test {
+  position: absolute;
+  pointer-events: none;
 } */
 
-canvas {
+/* canvas {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .gradient-text {
   background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
@@ -30,3 +30,4 @@ canvas {
 .footer-gradient {
   background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
 }
+

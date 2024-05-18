@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="footer-gradient mt-32">
+    <div className="footer-gradient">
       <div className="text-[#EEE5FFB8] flex items-center justify-between 2xl:mx-60 xl:mx-20 mx-5 h-14 text-sm font-outfit
       ">
         <div>© 2023 Copywrite. All rights reserved by QodeMatrix</div>
