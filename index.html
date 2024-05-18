@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotionArt Effect</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <canvas class="-z-10" style="width: 100vw; height: 100vh"></canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "webgl-fluid": "https://cdn.jsdelivr.net/npm/webgl-fluid@0.3/dist/webgl-fluid.mjs"
+        }
+      }
+    </script>
+    <script type="module">
+      import WebGLFluid from "webgl-fluid";
+
+      WebGLFluid(document.querySelector("canvas"), {
+        TRIGGER: "hover",
+        IMMEDIATE: true,
+        AUTO: false,
+        INTERVAL: 3000,
+        SIM_RESOLUTION: 256,
+        DYE_RESOLUTION: 256,
+        CAPTURE_RESOLUTION: 256,
+        DENSITY_DISSIPATION: 2,
+        VELOCITY_DISSIPATION: 0.8,
+        PRESSURE: 0.5,
+        PRESSURE_ITERATIONS: 40,
+        CURL: 80,
+        SPLAT_RADIUS: 0.55,
+        SPLAT_FORCE: 8000,
+        SPLAT_COUNT: 10, // Initial or automatic splats' count
+        SHADING: true,
+        COLORFUL: true,
+        COLOR_UPDATE_SPEED: 5,
+        PAUSED: false,
+        BACK_COLOR: { r: 14, g: 15, b: 26 },
+        TRANSPARENT: false,
+        BLOOM: true,
+        BLOOM_ITERATIONS: 6,
+        BLOOM_RESOLUTION: 256,
+        BLOOM_INTENSITY: 0.6,
+        BLOOM_THRESHOLD: 0.5,
+        BLOOM_SOFT_KNEE: 0.9,
+        SUNRAYS: false,
+        SUNRAYS_RESOLUTION: 196,
+        SUNRAYS_WEIGHT: 1.0,
+      });
+    </script>
+  </body>
+</html>

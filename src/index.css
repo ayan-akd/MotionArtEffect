@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .App {
+  background: rgb(54, 48, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 48, 48, 1) 0%,
+    rgba(0, 0, 0, 1) 77%
+  );
+} */
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.footer-gradient {
+  background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+}
