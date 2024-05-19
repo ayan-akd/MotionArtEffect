@@ -4,19 +4,8 @@
 @tailwind utilities;
 
 body {
-  background: rgb(14, 15, 26);
   overflow-x: hidden;
 }
-/* .test {
-  position: absolute;
-  pointer-events: none;
-} */
-
-/* canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
 .gradient-text {
   background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
@@ -32,4 +21,11 @@ body {
 }
 .button-gradient {
   background: linear-gradient(90deg,  #5E11FF 0%, #F87516 100%);
+}
+
+.card-background {
+  background: linear-gradient(180deg, #0d061f 0%, #251e35 100%);
+  border: solid 2px;
+  border-color: #ffffff10;
+  border-radius: 20px;
 }

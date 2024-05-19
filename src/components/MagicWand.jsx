@@ -1,7 +1,7 @@
 import { GoArrowRight } from "react-icons/go";
 const MagicWand = () => {
   return (
-    <div className="text-[#EEE5FF] flex items-center justify-between 2xl:px-60 xl:px-32 px-5 mb-20 flex-col md:flex-row">
+    <div className="text-[#EEE5FF] flex items-center justify-between 2xl:px-60 xl:px-32 lg:px-10 md:px-8 px-5 mb-20 flex-col md:flex-row">
       <div className="md:w-1/2">
         <h2 className="text-[25px] md:text-[30px] xl:text-[40px] leading-[45px] md:leading-[50px] xl:leading-[60px] font-sora font-medium md:text-start text-center">
           Turn Your Cursor Into A Colorful Magic Wand & Charm Your Visitors

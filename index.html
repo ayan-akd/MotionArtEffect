@@ -9,7 +9,7 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <canvas class="-z-10 w-screen h-[3050px]"></canvas>
+    <canvas class="-z-10 w-screen h-screen fixed"></canvas>
     <script type="importmap">
       {
         "imports": {
@@ -19,6 +19,15 @@
     </script>
     <script type="module">
       import WebGLFluid from "webgl-fluid";
+      const canvas = document.querySelector("canvas");
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
 
       WebGLFluid(document.querySelector("canvas"), {
         TRIGGER: "hover",
@@ -35,7 +44,7 @@
         CURL: 80,
         SPLAT_RADIUS: 0.55,
         SPLAT_FORCE: 8000,
-        SPLAT_COUNT: 10, // Initial or automatic splats' count
+        SPLAT_COUNT: 10,
         SHADING: true,
         COLORFUL: true,
         COLOR_UPDATE_SPEED: 5,
