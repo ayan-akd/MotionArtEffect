@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Review from "./components/Review";
 import WebGLFluid from "webgl-fluid";
+import MagicWand from "./components/MagicWand";
+import CardSection from "./components/CardSection";
 const App = () => {
   // const canvasRef = useRef(null);
   // const [fluidAnimation, setFluidAnimation] = useState(null);
@@ -82,6 +84,8 @@ const App = () => {
       <NavBar></NavBar>
       <Banner></Banner>
       <Review></Review>
+      <MagicWand></MagicWand>
+      <CardSection></CardSection>
       <Footer></Footer>
     </div>
   );

@@ -30,4 +30,6 @@ body {
 .footer-gradient {
   background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
 }
-
+.button-gradient {
+  background: linear-gradient(90deg,  #5E11FF 0%, #F87516 100%);
+}

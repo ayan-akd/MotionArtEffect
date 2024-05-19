@@ -15,7 +15,7 @@ const Banner = () => {
           Attract Your Visitors Attention With Colorful{" "}
           <span className="gradient-text">Motion Art Effect</span>
         </h1>
-        <p className="font-outfit text-lg mt-6 font-light text-[#EEE5FFB8] xl:pr-8">
+        <p className="font-outfit text-lg mt-6 font-light text-[#EEE5FFBD] xl:pr-8">
           Unleash the power of creativity with Motion Art for Elementor - your
           ultimate solution for seamlessly integrating captivating animations
           into your website.{" "}
