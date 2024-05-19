@@ -9,8 +9,9 @@ const Plugin = () => {
         for Elementor seamlessly integrates with the Elementor platform,
         providing you with a seamless and intuitive experience.
       </p>
-
+      {/* cards section  */}
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-6 2xl:px-60 xl:px-20 md:px-6 px-2 mt-10">
+        {/* card 1  */}
         <div className="card-background xl:py-10 py-8 xl:px-5 px-2">
           <img src="/assets_motion_art/motionarteffect-img9.png" alt="" />
           <h3 className="ml-5 lg:my-5 my-3 font-sora xl:text-3xl md:text-2xl text-xl text-[#EEE5FF] font-medium md:leading-[45px] leading-10 ">
@@ -20,25 +21,26 @@ const Plugin = () => {
             Motion Art for Elementor is designed to be lightweight.
           </p>
         </div>
+        {/* card 2  */}
         <div className="card-background xl:py-10 py-8 xl:px-5 px-2">
           <img src="/assets_motion_art/motionarteffect-img6.png" alt="" />
           <h3 className="ml-5 lg:my-5 my-3 font-sora xl:text-3xl md:text-2xl text-xl text-[#EEE5FF] font-medium md:leading-[45px] leading-10 ">
-          100% Responsive
+            100% Responsive
           </h3>
           <p className="ml-5 font-outfit text-[#EEE5FFBD] font-light pr-10">
-          Create a consistent visual experience across all devices.
+            Create a consistent visual experience across all devices.
           </p>
         </div>
+        {/* card 3  */}
         <div className="card-background xl:py-10 py-8 xl:px-5 px-2 xl:col-span-1 md:col-span-2">
           <img src="/assets_motion_art/motionarteffect-img7.png" alt="" />
           <h3 className="ml-5 lg:my-5 my-3 font-sora xl:text-3xl md:text-2xl text-xl text-[#EEE5FF] font-medium md:leading-[45px] leading-10 ">
-          User Friendly Interface
+            User Friendly Interface
           </h3>
           <p className="ml-5 font-outfit text-[#EEE5FFBD] font-light pr-10">
-          Ensure a smooth experience for both applicants and administrators.
+            Ensure a smooth experience for both applicants and administrators.
           </p>
         </div>
-        
       </div>
     </div>
   );
